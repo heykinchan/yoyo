@@ -31,13 +31,18 @@ header p {
     margin: 20px auto;
 }
 
+/* Heart Shape */
 #heart {
     width: 200px;
     height: 180px;
     background-color: #ff69b4;
-    margin: 0 auto;
+    margin: 20px auto; /* Add spacing around the heart */
     position: relative;
     transform: rotate(-45deg);
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    overflow: hidden; /* Prevent text from spilling outside the heart */
 }
 
 #heart:before,
@@ -46,25 +51,29 @@ header p {
     width: 200px;
     height: 200px;
     background-color: #ff69b4;
-    border-radius: 50%;
+    border-radius: 50%; /* Create the circular parts of the heart */
     position: absolute;
     top: -100px;
     left: 0;
 }
 
 #heart:after {
-    left: 100px;
+    left: 100px; /* Position the second circle */
 }
 
+/* Heart Text */
 .heart-text {
     color: white;
-    font-size: 1rem;
-    position: absolute;
-    transform: rotate(45deg);
-    width: 100%;
-    text-align: center;
+    font-size: 1.2rem;
     font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    transform: rotate(45deg); /* Rotate the text back to normal */
+    z-index: 1; /* Ensure the text stays above the heart shape */
+    margin: 0; /* Avoid unnecessary spacing around text */
+    padding: 5px;
 }
+
 
 /* Love Messages Section Styling */
 #love-messages {
