@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const messageList = document.getElementById('message-list');
 
-    // Add messages to the page
+    // Add messages dynamically with a delay
     messages.forEach((message, index) => {
         setTimeout(() => {
             const li = document.createElement('li');
             li.textContent = message;
             messageList.appendChild(li);
-        }, index * 1000); // Add a delay for each message
+        }, index * 1000); // Delay each message by 1 second
     });
 });
