@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff0f5;
@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Section Styling */
 header {
     text-align: center;
     background: #ff69b4;
@@ -24,7 +25,7 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Heart Section */
+/* Heart Section Styling */
 #heart-message {
     text-align: center;
     margin: 20px auto;
@@ -65,9 +66,53 @@ header p {
     font-weight: bold;
 }
 
-/* Love Messages */
+/* Love Messages Section Styling */
 #love-messages {
     padding: 20px;
 }
 
-#lo
+#love-messages h2 {
+    text-align: center;
+    color: #ff69b4;
+}
+
+#message-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#message-list li {
+    background: #fff5f8;
+    color: #ff69b4;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #ff69b4;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
