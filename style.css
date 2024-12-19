@@ -1,52 +1,73 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #fff0f5;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
     text-align: center;
+    background: #ff69b4;
+    color: white;
+    padding: 20px 10px;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+header p {
+    font-size: 1.2rem;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
+/* Heart Section */
+#heart-message {
+    text-align: center;
+    margin: 20px auto;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+#heart {
+    width: 200px;
+    height: 180px;
+    background-color: #ff69b4;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(-45deg);
 }
 
-main {
+#heart:before,
+#heart:after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+#heart:after {
+    left: 100px;
+}
+
+.heart-text {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Love Messages */
+#love-messages {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+#lo
