@@ -1,8 +1,8 @@
-{
+n{
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/your-repository-name",
+  "homepage": "https://heykinchan.github.io/yoyo",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
